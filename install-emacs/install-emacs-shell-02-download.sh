@@ -1,5 +1,9 @@
+#!/usr/bin/env bash
+
 # 2. Download Emacs
 
+set -eoux pipefail
+
 cd ~
-wget https://ftp.gnu.org/pub/gnu/emacs/emacs-27.2.tar.gz
-tar -xzvf emacs-27.2.tar.gz
+wget --no-clobber https://ftpmirror.gnu.org/emacs/emacs-28.1.tar.xz
+tar -xvf emacs-28.1.tar.xz
